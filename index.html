@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me</title>
+  <style>
+    :root {
+      --bg: #f7f7f4;
+      --paper: #ffffff;
+      --text: #161616;
+      --muted: #5f6368;
+      --soft: #ece9e2;
+      --border: #dedbd2;
+      --accent: #9b1c1c;
+      --accent-soft: #f5e8e8;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+    }
+
+    .page {
+      width: min(820px, 92%);
+      margin: 0 auto;
+      padding: 56px 0;
+    }
+
+    .site-label {
+      font-size: 0.82rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 18px;
+      margin-bottom: 48px;
+    }
+
+    header {
+      margin-bottom: 34px;
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2.6rem, 7vw, 5rem);
+      line-height: 1.02;
+      margin: 0 0 18px;
+      letter-spacing: -0.045em;
+      font-weight: 700;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      font-size: 1.12rem;
+      max-width: 720px;
+      margin: 0;
+    }
+
+    .article-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 18px;
+      color: var(--muted);
+      font-size: 0.94rem;
+      padding: 18px 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      margin: 32px 0;
+    }
+
+    .article-meta strong {
+      color: var(--text);
+      font-weight: 650;
+    }
+
+    article,
+    section {
+      background: var(--paper);
+      border: 1px solid var(--border);
+      padding: clamp(24px, 5vw, 42px);
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.75rem;
+      line-height: 1.2;
+      margin: 0 0 18px;
+      letter-spacing: -0.025em;
+    }
+
+    p {
+      color: var(--muted);
+      margin: 0 0 18px;
+    }
+
+    .lead {
+      color: #323232;
+      font-size: 1.05rem;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    .item {
+      padding: 18px 18px 18px 20px;
+      border-left: 3px solid var(--accent);
+      background: #fbfaf7;
+    }
+
+    .item strong {
+      color: var(--text);
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 700;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .skills span {
+      padding: 7px 11px;
+      border: 1px solid var(--border);
+      background: var(--accent-soft);
+      color: #401313;
+      font-size: 0.93rem;
+      border-radius: 999px;
+    }
+
+    .note {
+      border-left: 3px solid var(--accent);
+      background: #fbfaf7;
+      padding: 16px 18px;
+      color: var(--muted);
+      margin-top: 22px;
+    }
+
+    footer {
+      color: var(--muted);
+      text-align: center;
+      margin-top: 34px;
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 620px) {
+      .page {
+        padding: 34px 0;
+      }
+
+      .site-label {
+        margin-bottom: 34px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="site-label">Personal Blog / Developer Profile</div>
+
+    <header>
+      <div class="eyebrow">Canadian Developer</div>
+      <h1>About Me</h1>
+      <p class="subtitle">
+        I'm a Canadian vibe coder interested in practical software, technical experimentation, and building projects that help me understand how systems work from the inside out.
+      </p>
+    </header>
+
+    <div class="article-meta">
+      <span><strong>Location:</strong> Canada</span>
+      <span><strong>Focus:</strong> Software, AI, Security Tools</span>
+      <span><strong>Style:</strong> Experimental, hands-on development</span>
+    </div>
+
+    <article>
+      <h2>My Developer Journey</h2>
+      <p class="lead">
+        I have been vibe coding for a while, using curiosity and rapid prototyping to turn rough ideas into working software. I like starting with a concept, testing it quickly, learning from what breaks, and improving it until it becomes something more complete.
+      </p>
+      <p>
+        My interest in technology originally grew from robotics and embedded systems. I was drawn to how software can control hardware, how microcontrollers work, and how code can interact directly with the physical world.
+      </p>
+      <p>
+        Later, I became more invested in artificial intelligence and machine learning. That shifted my focus toward models, automation, intelligent tools, and how AI can support development workflows or become part of larger systems.
+      </p>
+      <p>
+        More recently, I have been moving deeper into software-based projects. I am especially interested in security-oriented utilities, basic password generators, developer tools, programming language design, package systems, and virtual operating system concepts.
+      </p>
+
+      <div class="timeline">
+        <div class="item">
+          <strong>Robotics & Embedded Systems</strong>
+          Exploring microcontrollers, hardware control, low-level logic, and how software interacts with real devices.
+        </div>
+        <div class="item">
+          <strong>Artificial Intelligence & Machine Learning</strong>
+          Learning how intelligent systems work, how models can assist development, and how AI can be integrated into projects.
+        </div>
+        <div class="item">
+          <strong>Software, Security & Virtual Systems</strong>
+          Building more software-focused tools, including password utilities, custom language ideas, virtual operating systems, and developer-focused applications.
+        </div>
+      </div>
+    </article>
+
+    <section>
+      <h2>What I Like Building</h2>
+      <p>
+        I enjoy projects that are useful, experimental, and technically interesting. I like systems that are simple enough to understand but flexible enough to grow into something more advanced.
+      </p>
+      <p>
+        My current focus is on software-oriented development, especially tools that involve security, operating system concepts, AI-assisted workflows, and language design.
+      </p>
+
+      <div class="skills">
+        <span>Vibe Coding</span>
+        <span>Rust</span>
+        <span>Python</span>
+        <span>HTML</span>
+        <span>AI Tools</span>
+        <span>Machine Learning</span>
+        <span>Security Applications</span>
+        <span>Password Generators</span>
+        <span>Virtual Operating Systems</span>
+        <span>Embedded Systems</span>
+        <span>Robotics</span>
+      </div>
+
+      <div class="note">
+        Current direction: building cleaner, more practical software projects while continuing to explore systems, security, AI, and custom development tools.
+      </div>
+    </section>
+
+    <footer>
+      Built with curiosity, experimentation, and a hands-on approach to code.
+    </footer>
+  </main>
+</body>
+</html>
